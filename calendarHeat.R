@@ -127,7 +127,7 @@ calendarHeat <- function(dates,
         trellis.focus("panel", row = row, column = column,
                       highlight = FALSE)
         #print(trellis.last.object() )
-        print(lattice::packet.number())
+        #print(lattice::packet.number())
         xyetc <- trellis.panelArgs(packet.number=lattice::packet.number())
         subs <- caldat[xyetc$subscripts,]
         dates.fsubs <- caldat[caldat$yr == unique(subs$yr),]
